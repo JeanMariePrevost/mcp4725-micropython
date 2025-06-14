@@ -3,7 +3,7 @@ MCP4725 DAC Driver for Raspberry Pi Pico
 
 License: MIT
 Copyright (c) 2025 Jean-Marie Prévost
-GitHub: https://github.com/JeanMariePrevost/mcp4725
+GitHub: https://github.com/JeanMariePrevost/mcp4725-micropython
 
 Basic Usage:
 ------------
