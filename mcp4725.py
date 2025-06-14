@@ -7,6 +7,8 @@ GitHub: https://github.com/JeanMariePrevost/mcp4725-micropython
 
 Basic Usage:
 ------------
+from mcp4725 import MCP4725
+
 # Initialize I2C and DAC
 i2c = I2C(0, sda=Pin(0), scl=Pin(1), freq=400000)
 dac = MCP4725(i2c, vcc=3.3)
@@ -14,7 +16,7 @@ dac = MCP4725(i2c, vcc=3.3)
 # Example of ways to set the DAC to 50% of our 3.3V VCC
 dac.set_value(2048) # By raw DAC value (0-4095)
 dac.set_voltage(1.65)  # By voltage
-dac.set_value_norm(0.5) # 50% or 3.3V
+dac.set_value_norm(0.5) # 50% of VCC
 """
 
 
