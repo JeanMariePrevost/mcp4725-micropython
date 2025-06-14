@@ -4,15 +4,15 @@ mcp4725-py is a lightweight, dependency-free driver for the MCP4725 12-bit DAC, 
 
 <img src="images/MCP4725_Picture.webp" alt="MCP4725" width="300">
 
-It was developed for a hobby project using a Raspberry Pi Pico board, to turn this mess:
+It was developed for a hobby project using a Raspberry Pi Pico board, to turn this :
 
  ``` python
-    value = max(0, min(4095, int(value)))
-    buf = bytearray(3)
-    buf[0] = 0x40  # Fast mode command
-    buf[1] = value >> 4
-    buf[2] = (value & 0xF) << 4
-    self.i2c.writeto(self.address, buf)
+value = max(0, min(4095, int(value)))
+buf = bytearray(3)
+buf[0] = 0x40  # Fast mode command
+buf[1] = value >> 4
+buf[2] = (value & 0xF) << 4
+self.i2c.writeto(self.address, buf)
 ```
 
 into this:
